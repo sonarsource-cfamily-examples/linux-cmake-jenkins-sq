@@ -1,3 +1,22 @@
+= C++ example project scanned on SonarQube using GitLab CI
+
+It is very easy to analyze a C/C++/Objective-C project with SonarQube in your Jenkins Pipelines:
+
+. Create a `sonar-project.properties` file to store your configuration
+. Follow the steps described in the https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/[documentation of SonarScanner for Jenkins] 
+.. Install and configure the "SonarQube Scanner for Jenkins" plugin in "Configure System" section
+.. Configure the SonarScanner in "Global Tool Configuration" section
+. Add a task to download the https://docs.sonarqube.org/latest/analysis/languages/cfamily/#header-4/[Build Wrapper]
+. Wrap your compilation with the Build Wrapper
+. Launch the analysis using `withSonarQubeEnv` block
+
+
+You can take a look at the link:sonar-project.properties[sonar-project.properties] and link:Jenkinsfile[Jenkinsfile] to see it in practice. Please be aware that the SonarQube server URL is not completed in this Jenkinsfile example.
+
+= Documentation
+
+- https://docs.sonarqube.org/latest/analysis/languages/cfamily/[Documentation of the C/C++/Objective-C plugin and its Build Wrapper]
+
 = Linux\CMake
 
 A build of the https://github.com/sc-sq-c-family-examples/code[code repository] on a Linux platform using CMake build system.
