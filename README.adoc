@@ -1,4 +1,4 @@
-= C++ example project scanned on SonarQube using GitLab CI
+= C++ example project scanned on SonarQube using Jenkins
 
 :note-caption: :information_source:
 NOTE: This simple example ignores https://docs.sonarqube.org/latest/analysis/languages/cfamily/#header-7[analysis cache] and https://docs.sonarqube.org/latest/analysis/languages/cfamily/#header-8[multithreaded execution] both of which can boost analysis significantly.
