@@ -7,7 +7,7 @@ It is very easy to analyze a C, C++ and Objective-C project with SonarQube in yo
 . Follow the steps described in the https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/[documentation of SonarScanner for Jenkins] 
 .. Install and configure the "SonarQube Scanner for Jenkins" plugin in "Configure System" section
 .. Configure the SonarScanner in "Global Tool Configuration" section
-. Add a task to download the https://docs.sonarqube.org/latest/analyzing-source-code/languages/c-family/#using-build-wrapper/[Build Wrapper]
+. Add a task to download the https://docs.sonarsource.com/sonarqube/latest/analyzing-source-code/languages/c-family/prerequisites/#using-buildwrapper/[Build Wrapper]
 . Wrap your compilation with the Build Wrapper
 . Launch the analysis using `withSonarQubeEnv` block
 
@@ -17,8 +17,8 @@ You can take a look at the link:sonar-project.properties[sonar-project.propertie
 = Documentation
 
 - https://docs.sonarqube.org/latest/analysis/languages/cfamily/[Documentation of the C, C++ and Objective-C plugin and its Build Wrapper]
-- https://docs.sonarqube.org/latest/analyzing-source-code/languages/c-family/#analysis-cache[Configuring C, C++ and Objective-C analysis cache]
-- https://docs.sonarqube.org/latest/analyzing-source-code/languages/c-family/#parallel-code-scan[Configuring multithreaded execution]
+- https://docs.sonarsource.com/sonarqube/latest/analyzing-source-code/languages/c-family/customizing-the-analysis/#analysis-cache[Configuring C, C++ and Objective-C analysis cache]
+- https://docs.sonarsource.com/sonarqube/latest/analyzing-source-code/languages/c-family/customizing-the-analysis/#parallel-code-scan[Configuring multithreaded execution]
 
 = Linux\CMake
 
